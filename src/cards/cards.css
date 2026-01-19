@@ -1,0 +1,36 @@
+.banner-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.banner-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: clip;
+    min-height: 300px;
+}
+
+.banner-card:nth-child(1) {
+    background-image: url("https://b2ccdn.sunmar.ru/content/landing-pages/our-advantages/blue-1.webp");
+}
+
+.banner-card:nth-child(2) {
+    background-image: url("https://b2ccdn.sunmar.ru/content/landing-pages/our-advantages/blue-2.webp");
+}
+
+@media (min-width: 1024px) {
+    .banner-cards {
+        flex-direction: row;
+    }
+
+    .banner-card {
+        width: calc(50% - 12px);
+    }
+}

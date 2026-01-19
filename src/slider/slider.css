@@ -1,0 +1,110 @@
+.slider__slide.swiper-slide {
+    background-color: #fff;
+    border-radius: 20px;
+    flex-direction: column;
+    height: auto;
+    display: flex
+}
+
+.slider__info {
+    background-color: #f5f5f8;
+    border-radius: 0 0 20px 20px;
+    flex: 1;
+    padding: 24px;
+    min-height: 173px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.slider__img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0;
+    height: 164px;
+    display: flex
+}
+
+.slider__title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px
+}
+
+.slider__prev {
+    left: 20px
+}
+
+.slider__next {
+    right: 20px
+}
+
+.slider__prev, .slider__next {
+    z-index: 1;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1)
+}
+
+@media screen and (max-width: 768px) {
+    .slider__prev, .slider__next {
+        display: none
+    }
+}
+
+.swiper-pagination {
+    position: relative !important;
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #0E2855 !important;
+}
+
+.swiper-pagination-bullet-active {
+    position: relative;
+}
+
+.swiper-pagination-bullet-active:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border: 2px solid #0E2855;
+    border-radius: 100%;
+}
+
+@media (min-width: 1280px) {
+    .swiper-wrapper {
+        justify-content: space-between;
+    }
+
+    .slider__slide {
+        width: calc(25% - 16px) !important;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+}
