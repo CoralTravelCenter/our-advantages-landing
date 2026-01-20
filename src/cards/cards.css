@@ -17,6 +17,10 @@
     min-height: 300px;
 }
 
+.banner-card .text {
+    width: 45%;
+}
+
 .banner-card:nth-child(1) {
     background-image: url("https://b2ccdn.sunmar.ru/content/landing-pages/our-advantages/blue-1.webp");
 }

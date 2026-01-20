@@ -15,6 +15,7 @@ import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
 
 import slider2 from './slider-2/slider-2.html?raw';
+import './slider-2/slider-2.css'
 
 
 const c = document.querySelector('#monkey-app')
@@ -82,26 +83,17 @@ hostReactAppReady().then(() => {
 hostReactAppReady().then(() => {
   let swiper;
 
-  const sliderMedia = window.matchMedia("(max-width: 1279px)");
+  const sliderMedia = window.matchMedia("(max-width: 767px)");
 
   function initSwiperByMedia(e) {
     const isMobile = e.matches;
     if (isMobile && !swiper) {
       swiper = new Swiper(".js-slider-advantages-2", {
         modules: [Navigation, Pagination],
-        slidesPerView: 1.3,
+        slidesPerView: 1,
         spaceBetween: 32,
-        loop: true,
         pagination: {
-          el: ".js-slider-advantages-pagination",
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 1.7,
-          },
-          1024: {
-            slidesPerView: 2.7,
-          },
+          el: ".js-slider-advantages-pagination-2",
         },
       });
     }

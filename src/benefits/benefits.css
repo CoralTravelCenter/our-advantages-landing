@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 16px;
+    text-align: left;
 }
 
 .card .icon {
@@ -48,5 +49,6 @@
 @media (min-width: 1440px) {
     .card {
         flex-direction: row;
+        text-align: left;
     }
 }

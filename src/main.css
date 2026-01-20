@@ -181,7 +181,7 @@ a.sunmar-button:hover {
 a.sunmar-button--white {
     color: inherit;
     background: #fff;
-    border: 1px solid #d8242a
+    /*border: 1px solid #d8242a*/
 }
 
 a.sunmar-button--white:hover {
@@ -235,4 +235,12 @@ section:has(.banner.banner--text) .wrapper {
 
 .font-bold {
     font-weight: 600;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-white {
+    color: #fff;
 }

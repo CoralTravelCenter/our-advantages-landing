@@ -1,0 +1,78 @@
+.js-slider-advantages-2 .swiper-slide {
+    display: flex;
+    padding: 32px 16px;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 8px;
+    background: #BCA0EB;
+    min-height: 520px;
+
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center calc(100% - 32px);
+
+}
+
+.js-slider-advantages-2 .swiper-slide .slider__title {
+    margin-bottom: 0;
+}
+
+.js-slider-advantages-2 .swiper-slide:nth-child(1) {
+    background-image: url("https://b2ccdn.sunmar.ru/content/landing-pages/our-advantages/i-1.webp");
+}
+
+.js-slider-advantages-2 .swiper-slide:nth-child(2) {
+    background-image: url("https://b2ccdn.sunmar.ru/content/landing-pages/our-advantages/i-2.webp");
+}
+
+.js-slider-advantages-2 .swiper-slide:nth-child(3) {
+    background-image: url("https://b2ccdn.sunmar.ru/content/landing-pages/our-advantages/i-3.webp");
+    background-position: right bottom;
+}
+
+@media (min-width: 768px) {
+    .js-slider-advantages-pagination-2 {
+        display: none;
+    }
+
+    .js-slider-advantages-2 .swiper-wrapper {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .js-slider-advantages-2 .swiper-slide {
+        background-size: 250px;
+        background-position: right bottom;
+        min-height: 370px;
+        padding: 30px 40px;
+    }
+
+    .js-slider-advantages-2 .swiper-slide:nth-child(1),
+    .js-slider-advantages-2 .swiper-slide:nth-child(2) {
+        background-position: calc(100% - 30px) calc(100% - 30px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .js-slider-advantages-2 .swiper-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .js-slider-advantages-2 .swiper-slide:nth-child(1) {
+        width: 100% !important;
+    }
+
+    .js-slider-advantages-2 .swiper-slide {
+        width: calc(50% - 10px) !important;
+    }
+
+    .js-slider-advantages-2 .swiper-slide:nth-child(1) .slider__title {
+        width: 50%;
+    }
+
+    .js-slider-advantages-2 .swiper-slide:nth-child(1) {
+        background-size: 300px;
+        background-position: calc(100% - 100px) calc(100% - 30px);
+    }
+}
